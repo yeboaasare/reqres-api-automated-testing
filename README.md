@@ -14,6 +14,11 @@ pip install -U pytest
 
 ```
 
+**Clone Repository**
+```bash
+git clone https://github.com/yeboaasare/reqres-api-automated-testing.git
+```
+
 **Run tests scripts**
 ```bash
 pytest register-test.py
