@@ -3,3 +3,4 @@ STATUS_NOT_FOUND = 404
 STATUS_BAD_REQUEST = 400
 REGISTER = 'register'
 USER = 'user/'
+LOGIN = 'login'
