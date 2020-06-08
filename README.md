@@ -8,7 +8,7 @@ This repo contains scripts that test [Req|Res](https://reqres.in/) API endpoinst
 ```bash
 python -m pip install -U pip
 ```
-* Install  **[pytest](https://docs.pytest.org/en/stable/getting-started.html)** to prevent warnings:
+* Install  **[pytest](https://docs.pytest.org/en/stable/getting-started.html)**
 ```bash
 pip install -U pytest
 
