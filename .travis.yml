@@ -16,3 +16,5 @@ install:
 # command to run tests
 script:
   - pytest tests/register-test.py
+  - pytest tests/login-test.py
+  - pytest tests/users-test.py

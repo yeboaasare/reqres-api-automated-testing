@@ -37,3 +37,5 @@ jobs:
     - name: Run automated test scripts
       run: |
         pytest tests/register-test.py
+        pytest tests/login-test.py
+        pytest tests/users-test.py
