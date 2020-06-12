@@ -33,3 +33,19 @@ def test_list_valid_user(supply_url, userid, firstname):
     assert resp.status_code == constants.STATUS_OK
     assert j['data']['id'] == userid, resp.text
     assert j['data']['first_name'] == firstname, resp.text
+
+
+def test_list_unexisting_user(supply_url):
+    userid = 23
+    url = supply_url['url'] + "users/" + str(userid)
+    resp = requests.get(url)
+    assert resp.status_code == constants.STATUS_NOT_FOUND
+
+
+def test_delete_user(supply_url):
+    userid = 2
+    url = supply_url['url'] + "users/" + str(userid)
+    resp = requests.delete(url)
+    assert resp.status_code == constants.STATUS_NO_CONTENT
+
+
